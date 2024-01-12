@@ -29,7 +29,7 @@ article {
     padding: 10px;
     margin-bottom: 20px;
     margin-top: 20px;
-    
+
 }
 
 article span {
@@ -46,9 +46,9 @@ article span {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    
-    
-    
+
+
+
 }
 
 .title {
@@ -64,7 +64,7 @@ article span {
 .main_banner_content {
     width: 80%;
     margin-top: 200px;
-    
+
 
 }
 
@@ -124,31 +124,39 @@ article span {
     background-image: url("./images/jpg/women.jpg");
     opacity: 0.6;
     background-repeat: no-repeat;
-    
+
 }
+
 .women:hover {
     opacity: 1;
 }
+
 .men {
     background-image: url("./images/jpg/men.jpg");
     opacity: 0.6;
     background-repeat: no-repeat;
-    
-    
+
+
 }
+
 .men:hover {
     opacity: 1;
 }
+
 .kids {
     background-image: url("./images/jpg/kids.jpg");
     opacity: 0.6;
     background-repeat: no-repeat;
-    
+
 }
+
 .kids:hover {
     opacity: 1;
 }
-.women,.men,.kids {
+
+.women,
+.men,
+.kids {
     height: 400px;
     width: 510px;
     display: flex;
@@ -157,23 +165,26 @@ article span {
     align-items: center;
     background-size: cover
 }
-.hero{
+
+.hero {
     display: grid;
     grid-template-columns: 4fr 4fr 4fr;
     width: 100%;
-    background-color: rgb(0,0,0);
+    background-color: rgb(0, 0, 0);
 }
+
 .hero div {
     font-size: 35px;
-    font-family:Arial, Helvetica, sans-serif ;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: azure;
     text-shadow: 1px 2px 1px #464646;
 
 }
-.hero button {
 
-    margin: 200px 10px;
+.card_button {
+    display: block;
+    margin: 220px 8px;
     padding: 2px 2px;
     border: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -187,17 +198,233 @@ article span {
     grid-template-columns: 3fr 3fr 3fr 3fr;
     padding: 10px;
     font-size: 15px;
-    color:gray;
+    color: gray;
     border-bottom: 2px solid darkslategray;
 }
+
 .nextstep {
     text-align: center;
     font-family: Arial;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 15px;
-    color:gray; 
+    color: gray;
 }
+
+.nextstep strong {
+    color: black;
+}
+
+/* --------------------------product---------------- */
+
+.product {
+    /* background-image:linear-gradient(150deg,#0ca080 2%,#6d62d4 50%, #255fb7 100%); */
+    padding: 5px;
+    width: 90%;
+    margin: 10px 5%;
+}
+
+.row1 {
+    display: grid;
+    grid-gap: 20px;
+    margin-bottom: 20px;
+    grid-template-columns: 4fr 8fr;
+}
+
+.row1 .left {
+    height: 400px;
+    background-image: url('./images/jpg/bags.webp');
+    background-size: cover;
+}
+
+.row1 .right {
+    background-image: url('./images/jpg/men_shirt.webp');
+    background-size: cover;
+}
+
+.row2 {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 8fr 4fr;
+}
+
+.row2 .left {
+    height: 400px;
+    background-image: url('./images/jpg/women_dress.webp');
+    background-size: cover;
+}
+
+.row2 .right {
+    background-image: url('./images/jpg/sweatshirts.jpg');
+    background-size: cover;
+}
+
+.left,
+.right,
+.top-sellers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.product-title {
+    font-size: 25px;
+    font-family: jost;
+    font-weight: bold;
+    display: flex;
+
+}
+
+.big_product-title {
+    font-size: 25px;
+    font-family: jost;
+    font-weight: bold;
+
+}
+
+
+.product button {
+    border: 0px;
+    margin: 20px 0px;
+    padding: 10px 40px;
+    background-color: rgba(255, 0, 0, 0);
+    font-weight: bold;
+
+}
+
+.row1 .left,
+.row2 .right {
+    color: white;
+}
+
+.row1 .left button,
+.row2 .right button {
+    color: white;
+}
+
+/* -----------------------top-sellers--------------- */
+
+.top-sellers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.different-text {
+    font-weight: thin;
+    letter-spacing: 1px;
+    color: rgb(66, 66, 66);
+}
+
+.small-heading {
+    font-size: 14px;
+    color: gray;
+    font-weight: bold;
+}
+
+.large-heading {
+    font-size: 42px;
+    font-weight: bold;
+    color: #1c1c1c;
+}
+
+.product-filters {
+    display: flex;
+    border-bottom: 20px;
+}
+
+.product-filters div {
+    padding: 10px 20px;
+    border-bottom: 1px solid white;
+}
+
+.product-filters div:hover {
+    color: orange;
+    border-bottom: 1px solid orange;
+}
+
+/* ------------------------------? */
+
+.product-items {
+    width: 90%;
+    height: 900px;
+    margin: 10px 10%;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.product-card {
+    width: 300px;
+    height: 420px;
+    margin: 10px 20px;
+}
+
+.product-card img {
+    width: 100%;
+}
+
+.product-card img:hover {
+    opacity: 40%;
+}
+
+/* ---------------------discover------------- */
+
+.discover {
+    width: 100%;
+    margin: 100px 0px;
+    padding: 5px 50px;
+    text-align: center;
+    border-bottom: 1px solid #272727;
+
+}
+
+/* ---------------------Discover Deals------------- */
+
+.discover-deals {
+    margin-top: 100px;
+    width: 100%;
+    height: 500px;
+    background-size: contain;
+    background-image: url('./images/jpg/deal_ofthe_week.png');
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+
+}
+
+.large-heading {
+    font-size: 42px;
+    font-weight: bold;
+    color: #1c1c1c;
+}
+
+/* ---------------------Reviews------------- */
+.reviews {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+.reviews small {
+    color: grey;
+}
+
+.reviews strong {
+    color: black;
+}
+
+
 
 
 /* Footer Section*/

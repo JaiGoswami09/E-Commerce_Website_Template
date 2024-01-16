@@ -3,8 +3,8 @@ header {
     justify-content: space-between;
     font-size: 25px;
     font-family: Arial;
-    background-color: darkslategray;
-    color: white;
+    background-color:white;
+    color: black;
     padding: 20px;
 }
 
@@ -27,8 +27,7 @@ article {
     font-size: 20px;
     text-align: center;
     padding: 10px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+   
 
 }
 
@@ -46,9 +45,7 @@ article span {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-
-
-
+    margin-bottom: 20px;
 }
 
 .title {
@@ -214,6 +211,11 @@ article span {
 .nextstep strong {
     color: black;
 }
+
+.bi-truck, .bi-arrow-left-right, .bi-lock-fill, .bi-tag-fill {
+    color: #fe4c50;
+}
+
 
 /* --------------------------product---------------- */
 
@@ -385,7 +387,7 @@ article span {
 
 }
 
-/* ---------------------Discover Deals------------- */
+/* ---------------------Discover Deals-------------
 
 .discover-deals {
     margin-top: 100px;
@@ -403,7 +405,7 @@ article span {
     font-size: 42px;
     font-weight: bold;
     color: #1c1c1c;
-}
+}---------------------------------*/
 
 /* ---------------------Reviews------------- */
 .reviews {
@@ -424,7 +426,35 @@ article span {
     color: black;
 }
 
+.hero1 {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    width: 100%;
+    background-color: white(0, 0, 0);
+    
+}
 
+.review1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.category {
+    color: grey;
+}
+
+.issue {
+    color: black;
+    font-weight: bold;
+}
+.review_icon {
+    color: gold;
+}
 
 
 /* Footer Section*/
@@ -436,7 +466,9 @@ footer {
     display: grid;
     grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
     font-family: Arial;
-    height: 200px;
+    height: 300px;
+    padding-bottom: 100px;
+    padding-top: 50px;
 }
 
 .brand-title+div {
@@ -460,3 +492,22 @@ footer {
 address div {
     margin-bottom: 15px;
 }
+
+.website_rights{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    height: 100px;
+
+}
+
+.rights {
+		margin-top: 35px;
+	}
+.warning {
+		margin-bottom: 20px;
+        margin-left: 40px;
+	}
+    .fa,fa-heart-o {
+        color: red;
+    }
